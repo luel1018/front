@@ -23,6 +23,11 @@ const router = createRouter({
       path: '/board/update/:boardIdx',
       component: () => import('@/views/board/Update.vue'),
     },
+    {
+      name: 'userSignup',
+      path: '/user/signup',
+      component: () => import('@/views/user/Signup.vue'),
+    },
   ],
 })
 
