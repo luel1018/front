@@ -8,6 +8,21 @@ const router = createRouter({
       path: '/board/reg',
       component: () => import('@/views/board/Reg.vue'),
     },
+    {
+      name: 'boardList',
+      path: '/board/list',
+      component: () => import('@/views/board/List.vue'),
+    },
+    {
+      name: 'boardRead',
+      path: '/board/read/:boardIdx',
+      component: () => import('@/views/board/Read.vue'),
+    },
+    {
+      name: 'boardUpdate',
+      path: '/board/update/:boardIdx',
+      component: () => import('@/views/board/Update.vue'),
+    },
   ],
 })
 
